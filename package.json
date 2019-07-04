@@ -7,8 +7,14 @@
     "readline-sync": "^1.4.9",
     "request-json": "^0.6.3",
     "socket.io-client": "2.1.0",
-    "winston": "^2.4.2"
+    "winston": "^2.4.2",
+    "snyk": "^1.189.0"
   },
   "author": "Zoz - Europools.tech",
-  "description": "DERO Network Monitoring - Nodes side"
+  "description": "DERO Network Monitoring - Nodes side",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
